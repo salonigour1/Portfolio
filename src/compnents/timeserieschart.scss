@@ -1,0 +1,31 @@
+.container {
+  display: flex; // I used flexbox to arrange child elements
+  justify-content: center; // It will center the content horizontally
+  align-items: center; // It will center the content vertically
+  flex-direction: column; // Here i am arranging child elements in a column direction
+}
+
+// Styling for SVG elements
+svg {
+  // Styling for the line path in the chart
+  path.line {
+    fill: none; // It will not fill the area under the line
+    stroke: steelblue; // Adding line color
+    stroke-width: 1.5; // Adding line thickness
+  }
+
+  // Styling for axes
+  .axis {
+    font-size: 12px; // Here i am adding font size for axis labels
+  }
+
+  // Styling for axis lines and ticks
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #ccc; // Here i am adding axis line color
+    stroke-width: 1; // Here i am adding axis line thickness
+    shape-rendering: crispEdges; // Ensuring crisp rendering for better
+    // readability
+  }
+}

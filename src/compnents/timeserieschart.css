@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+svg path.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5;
+}
+svg .axis {
+  font-size: 12px;
+}
+svg .axis path,
+svg .axis line {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}/*# sourceMappingURL=timeserieschart.css.map */
