@@ -1,51 +1,54 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../scss/Homepage.scss';
+import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa6';
+import { BsTwitterX } from 'react-icons/bs';
+import { IoIosMail } from 'react-icons/io';
+import Menu from './Menu';
 
 function Homepage() {
   return (
     <div>
-      <div className='test'>Cjdjdklk</div>
       <header>
         <div className='menu-btn'>
           <span className='menu-btn__burger'></span>
         </div>
-        <nav className='nav'>
-          <ul className='menu-nav'>
-            <li className='menu-nav__item active'>
-              <Link to='/' className='menu-nav__link'>
-                Home
-              </Link>
-            </li>
-            <li className='menu-nav__item'>
-              <Link to='/about' className='manu-nav__link'>
-                About
-              </Link>
-            </li>
-            <li className='menu-nav__item'>
-              <Link to='/projects' className='manu-nav__link'>
-                My Projects
-              </Link>
-            </li>
-            <li className='menu-nav__item'>
-              <Link to='/contact' className='manu-nav__link'>
-                Contact Me
-              </Link>
-            </li>
-            {/* <li className='menu-nav__item'>
-              <Link to='/contact' className='manu-nav__link'>
-                Resume
-              </Link>
-            </li> */}
-          </ul>
-        </nav>
+        <Menu />
       </header>
       <main>
         <section className='home'>
           <h2>Hi ! My Name Is</h2>
           <h1 className='main__name'>
-            Saloni <span className='main_name--last'>Gour</span>
+            Saloni <span className='main__name--last'>Gour</span>
           </h1>
+          <div className='social-icons'>
+            <a
+              href='https://www.linkedin.com/in/saloni-gour-556ba2243/'
+              target='_blank'
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+          <div className='social-icons'>
+            <a href='https://github.com/salonigour1' target='_blank'>
+              <FaGithub />
+            </a>
+          </div>
+          <div className='social-icons'>
+            <a
+              href='https://mail.google.com/mail/?view=cm&fs=1&to=salonigour02100@gmail.com'
+              target='_blank'
+            >
+              <IoIosMail />
+            </a>
+          </div>
+          <div className='social-icons'>
+            <a href='https://twitter.com/tia97973' target='_blank'>
+              <BsTwitterX />
+            </a>
+          </div>
+          <footer>©Saloni Gour. All Rights Reserved</footer>
         </section>
       </main>
     </div>

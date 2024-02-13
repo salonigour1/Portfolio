@@ -1,0 +1,23 @@
+@import 'config';
+nav {
+  position: fixed;
+  background-color: rgba(111, 111, 111, 0.4);
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+
+  .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    & li {
+      margin: 0.5rem;
+      & .active {
+        color: $secondary-color;
+      }
+    }
+    & a {
+      color: white;
+    }
+  }
+}
