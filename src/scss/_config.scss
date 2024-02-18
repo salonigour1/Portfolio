@@ -1,7 +1,10 @@
-$primary-color: rgb(45, 45, 45);
-$secondary-color: #ffd000;
+$primary-color: #242943;
+$primary-lighter-color: #2a314e;
+$secondary-color: white;
+$font: 'Source Sans 3', sans-serif;
 * {
   box-sizing: border-box;
+  font-family: $font;
   margin: 0;
   padding: 0;
 }

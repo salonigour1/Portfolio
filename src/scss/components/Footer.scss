@@ -1,0 +1,121 @@
+@import '../config';
+.message--first {
+}
+footer {
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: $primary-color;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials {
+  padding-top: 1rem;
+  display: flex;
+  .social-icons {
+    margin: 0.5rem;
+  }
+}
+.topbox {
+  border: 5px solid $primary-lighter-color;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 1rem;
+
+  display: flex;
+  width: 100vw;
+  .message__right {
+    padding: 2rem;
+    width: 50%;
+
+    & div {
+      //   height: 33%;
+    }
+    & span {
+      overflow: hidden;
+      font-size: 1.5rem;
+      margin-left: 0.3rem;
+    }
+    .icons {
+      overflow: hidden;
+      display: flex;
+    }
+    .message--item {
+      padding: 1rem;
+      margin: 1rem;
+
+      //   padding: 0.5rem 0rem 0rem 0.5rem;
+      border: 5px solid $primary-lighter-color;
+    }
+    .details--style {
+      margin-left: 2rem;
+      margin-top: 0.4rem;
+      //   border-top: 1px dotted $secondary-color;
+    }
+  }
+
+  .message__left {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: 50%;
+
+    text-align: center;
+    * div {
+      margin-bottom: 0.5rem;
+    }
+    .row {
+      display: flex;
+      width: 100%;
+
+      & div {
+        width: 50%;
+        text-align: start;
+      }
+      & input {
+        background-color: $primary-lighter-color;
+        width: 90%;
+        height: 3rem;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+      }
+    }
+    & textarea {
+      background-color: $primary-lighter-color;
+      width: 95%;
+      height: 10rem;
+      border-radius: 2px;
+      border: none;
+      outline: none;
+    }
+    .buttons {
+      cursor: pointer;
+      text-align: start;
+
+      & button {
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        margin-right: 1rem;
+        border: none;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+      & .clear {
+        box-sizing: border-box;
+        color: white;
+        border: 2px solid white;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+.message__form__textarea {
+  text-align: start;
+  //   padding: 1rem;
+}

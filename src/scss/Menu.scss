@@ -1,23 +1,47 @@
 @import 'config';
 nav {
   position: fixed;
-  background-color: rgba(111, 111, 111, 0.4);
+  background-color: $primary-color;
+
+  //    background-color: rgba(111, 111, 111, 0.4);
   z-index: 2;
+  font-size: 1.3rem;
   width: 100%;
   padding: 1rem;
 
   .menu-nav {
+    .title {
+      padding: 0.1rem 0.6rem;
+      letter-spacing: 3px;
+      color: black;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+    font-family: 'Open Sans', sans-serif;
     display: flex;
+    font-weight: 600;
     flex-direction: row;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-list {
+    display: flex;
+
     & li {
-      margin: 0.5rem;
+      margin: 0.6rem 0.8rem;
       & .active {
-        color: $secondary-color;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: rgb(249, 140, 249);
+        // color: $secondary-color;
       }
     }
     & a {
       color: white;
     }
   }
+}
+.skills {
+  cursor: pointer;
 }

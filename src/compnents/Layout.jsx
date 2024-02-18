@@ -1,12 +1,13 @@
 import React from 'react';
 import Menu from './Menu';
+import '../scss/Homepage.scss';
 
 function Layout({ children }) {
   return (
-    <div>
+    <>
       <Menu />
-      <>{children}</>
-    </div>
+      <div className='layout'>{children}</div>
+    </>
   );
 }
 
