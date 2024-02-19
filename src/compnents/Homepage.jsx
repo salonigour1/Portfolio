@@ -27,8 +27,7 @@ function Homepage() {
             Saloni <span className='main__name--last'>Gour</span>
           </h1>
         </section>
-        {/* <Footer props={sectionRef} /> */}
-        {/* <div ref={sectionRef}> */}
+
         <div id='footerr'>
           <Footer />
         </div>

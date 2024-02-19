@@ -6,7 +6,7 @@ function Menu() {
   console.log(location);
   const isActive = (path) => location.pathname === path;
   //footerr
-  function scrollToSection(id) {
+  function handleScrollToSection(id) {
     console.log(id);
     const element = document.getElementById(id);
     console.log(element);
@@ -21,20 +21,23 @@ function Menu() {
           <div className='title'>SG</div>
           <ul className='menu-list'>
             <li className='menu-nav__item'>
-              <Link
-                to='/'
+              <a
+                href='#'
                 className={`menu-nav__link ${isActive('/') ? 'active' : ''}`}
               >
                 About
-              </Link>
+              </a>
             </li>
             <li className='menu-nav__item'>
-              <button
-                className='manu-nav__link skills'
-                onClick={() => scrollToSection('footerr')}
+              <a
+                href='skills'
+                className={`menu-nav__link ${
+                  isActive('/skills') ? 'active' : ''
+                }`}
+                onClick={() => handleScrollToSection('Skills')}
               >
                 Skills
-              </button>
+              </a>
             </li>
             {/* <li className='menu-nav__item'>
             <Link
@@ -45,19 +48,21 @@ function Menu() {
             </Link>
           </li> */}
             <li className='menu-nav__item'>
-              <Link
-                to='/projects'
+              <a
+                href='#'
                 className={`menu-nav__link ${
                   isActive('/projects') ? 'active' : ''
                 }`}
               >
                 My Projects
-              </Link>
+              </a>
             </li>
 
             <li className='menu-nav__item'>
               <a
-                className='manu-nav__link'
+                className={`menu-nav__link ${
+                  isActive('/projects') ? 'active' : ''
+                }`}
                 href='https://drive.google.com/file/d/1gfIwLr2KXlzDeab9uIIsSJuOJmmkxRmw/view?usp=sharing'
                 target='blank'
               >
@@ -66,10 +71,12 @@ function Menu() {
             </li>
             <li className='menu-nav__item'>
               <a
-              // to='/contact'
-              // className={`menu-nav__link ${
-              //   isActive('/contact') ? 'active' : ''
-              // }`}
+                href='#'
+                onClick={() => handleScrollToSection('footerr')}
+                // to='/contact'
+                // className={`menu-nav__link ${
+                //   isActive('/contact') ? 'active' : ''
+                // }`}
               >
                 Contact Me
               </a>
