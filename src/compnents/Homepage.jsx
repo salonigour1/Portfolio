@@ -1,8 +1,16 @@
 import React, { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa6';
+import { BsTwitterX } from 'react-icons/bs';
+import { IoIosMail } from 'react-icons/io';
+import { IoCall } from 'react-icons/io5';
+import bg from '../blue_bg.jpg';
+import { FaRegAddressCard } from 'react-icons/fa6';
 import '../scss/Homepage.scss';
 
 import Footer from './Footer';
+import Socials from './Socials';
 
 function Homepage() {
   const sectionRef = useRef(null);
@@ -12,9 +20,6 @@ function Homepage() {
   }
   return (
     <div>
-      <button className='tesyyy' onClick={scrollToSection}>
-        Button footer
-      </button>
       <header>
         <div className='menu-btn'>
           <span className='menu-btn__burger'></span>
@@ -22,10 +27,22 @@ function Homepage() {
       </header>
       <main>
         <section className='home'>
-          <h2>Hi ! My Name Is</h2>
-          <h1 className='main__name'>
-            Saloni <span className='main__name--last'>Gour</span>
-          </h1>
+          <img src={bg} className='image' />
+          <div className='main_content'>
+            <h2>
+              Hi, my name is <span className='name'>Saloni Gour</span>
+            </h2>
+            {/* <h1 className='main__name'>
+              Saloni Gour
+             
+            </h1> */}
+            <div className='line'></div>
+            <div className='tagline'>
+              A passionate Frontend Developer Software Developer
+            </div>
+
+            <Socials />
+          </div>
         </section>
 
         <div id='footerr'>

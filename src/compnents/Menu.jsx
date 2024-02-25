@@ -18,7 +18,7 @@ function Menu() {
     <div>
       <nav className='nav'>
         <div className='menu-nav'>
-          <div className='title'>SG</div>
+          <div className='title'>Saloni Gour</div>
           <ul className='menu-list'>
             <li className='menu-nav__item'>
               <a

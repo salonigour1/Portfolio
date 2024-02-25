@@ -1,40 +1,80 @@
 @import 'config';
 
-// .open-sans-p {
-//   font-family: 'Open Sans', sans-serif;
-//   font-optical-sizing: auto;
-//   font-weight: 400;
-//   font-style: normal;
-//   font-variation-settings: 'wdth' 100;
-// }
 .layout {
-  padding-top: 4rem;
+  // padding-top: 4rem;
+}
+.main_content {
+  padding-left: 5rem;
+  // background-color: pink;
 }
 .home {
+  overflow: hidden;
   background-color: $primary-color;
   color: white;
   font-family: 'Source Sans 3', sans-serif;
   width: 100vw;
   height: 100vh;
-  line-height: 1;
+  // background-color: pink;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+
+  // text-transform: uppercase;
+  z-index: 1;
+  font-size: 2rem;
+  position: relative;
+  background-repeat: no-repeat;
+  .image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+  }
 }
-.test {
-  color: rgb(190, 115, 190);
+h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  .name {
+    font-size: 3rem;
+  }
+}
+.tagline {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.line {
+  margin: 1rem 1rem 1rem 0rem;
+  width: 80vw;
+  height: 1px;
+  border: 2px solid white;
 }
 
-// .active {
-//   background-color: lawngreen;
+// h2 {
+//   font-weight: 400;
+//   font-size: 1.5rem;
+//   color: $theme;
+//   margin-bottom: 0.5rem;
+//   font-family: 'Crimson Text', serif;
 // }
-h1,
-h2,
-h3 {
-  font-weight: 400;
+// h1 {
+//   font-weight: 400;
+//   font-size: 5rem;
+//   margin-bottom: 0.7rem;
+//   font-family: 'DM Serif Display', serif;
+// }
+// h3 {
+//   font-weight: 400;
+//   color: $theme;
+//   font-size: 2rem;
+//   margin-bottom: 0.5rem;
+//   font-family: 'Crimson Text', serif;
+// }
+.main__name--last {
+  font-family: 'Lobster', sans-serif;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -44,8 +84,4 @@ ul {
 }
 body {
   background-color: $primary-color;
-}
-
-.main__name {
-  background-color: pink;
 }
