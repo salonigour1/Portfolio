@@ -11,10 +11,10 @@ import '../scss/Homepage.scss';
 
 import Footer from './Footer';
 import Socials from './Socials';
+import About from './About';
 
 function Homepage() {
   const sectionRef = useRef(null);
-
   function scrollToSection() {
     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
   }
@@ -32,10 +32,7 @@ function Homepage() {
             <h2>
               Hi, my name is <span className='name'>Saloni Gour</span>
             </h2>
-            {/* <h1 className='main__name'>
-              Saloni Gour
-             
-            </h1> */}
+
             <div className='line'></div>
             <div className='tagline'>
               A passionate Frontend Developer Software Developer
@@ -45,6 +42,9 @@ function Homepage() {
           </div>
         </section>
 
+        <div id='about'>
+          <About />
+        </div>
         <div id='footerr'>
           <Footer />
         </div>

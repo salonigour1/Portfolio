@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../scss/Menu.scss';
 function Menu() {
   const location = useLocation();
   console.log(location);
+  const [scrolling, setScrolling] = useState(false);
   const isActive = (path) => location.pathname === path;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+  });
   //footerr
   function handleScrollToSection(id) {
     console.log(id);
@@ -14,9 +27,10 @@ function Menu() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
   return (
     <div>
-      <nav className='nav'>
+      <nav className={`nav ${scrolling ? 'scroll' : ''}`}>
         <div className='menu-nav'>
           <div className='title'>Saloni Gour</div>
           <ul className='menu-list'>

@@ -2,11 +2,12 @@
 nav {
   position: fixed;
   // background-color: $primary-color;
+  transition: background-color 1s ease;
   // background-color: rgba(111, 111, 111, 0.4);
   z-index: 2;
   font-size: 1.3rem;
   width: 100%;
-  padding: 1rem;
+  padding: 0.6rem;
 
   .menu-nav {
     .title {
@@ -40,6 +41,9 @@ nav {
       color: white;
     }
   }
+}
+.scroll {
+  background-color: $primary-color;
 }
 .skills {
   cursor: pointer;
